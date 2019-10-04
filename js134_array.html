@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+
+	<script type="text/javascript">
+		listaCompra = new Array();
+		var bucle = 5;
+		var articulo;
+		var i=0;
+/*		// forma 1 de realizar bucle+ if
+		while (i<bucle) {
+			articulo=prompt('introduce un articulo');
+			boleano=listaCompra.includes(articulo)
+			if (boleano) {
+				alert(`producto en el carrito duplicado `);
+			} else {
+				listaCompra.push(articulo);
+				i++;
+			}	
+		}
+		document.write(`array ${listaCompra} <br>`); */
+/*		//forma 2 de realizar bucle + if
+		do {
+			articulo=prompt('introduce un articulo');
+			if (listaCompra.includes(articulo)) {
+				alert(`producto en el carrito duplicado `);
+			} else {
+				listaCompra.push(articulo);
+				i++;
+			}	
+		} while (i<bucle)
+		document.write(`array ${listaCompra} <br>`); */
+		//forma 3 de realizar el bucle y condición lógica
+		do {
+			articulo=prompt('introduce un articulo');
+			(listaCompra.includes(articulo)) ? (alert(`producto en el carrito duplicado `)) : (listaCompra.push(articulo), i++);
+		} while (i<bucle);
+		document.write(`array ${listaCompra} <br>`);
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
